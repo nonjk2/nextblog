@@ -5,6 +5,7 @@ import { FC } from "react";
 
 const PostCard: FC<Post> = (post) => {
   const { category, date, description, featured, path, title } = post;
+
   return (
     <Link href={`/post/${path}`}>
       <article className="rounded-md overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105">
