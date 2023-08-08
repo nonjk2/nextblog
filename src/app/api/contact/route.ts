@@ -10,5 +10,6 @@ export const POST = async (req: Request) => {
   if (!bodySchema.isValidSync(req.body)) {
     return new Response("유효하지 않은 포맷", { status: 400 });
   }
+
   const { from, message, subject } = req.body;
 };
